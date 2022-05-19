@@ -1,4 +1,3 @@
-using Models.Common;
 using UI.Extension;
 using UI.Extensions;
 
@@ -9,7 +8,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddAuthenticationServices(builder.Configuration);
 builder.Services.AddApplicationServices(builder.Configuration);
-
+builder.Services.AddHttpContextAccessor();
 
 
 var app = builder.Build();
@@ -26,11 +25,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

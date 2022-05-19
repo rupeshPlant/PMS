@@ -12,8 +12,11 @@ namespace Entities
     {
         [Key]
         public string EmployeeId { get; set; } = System.Guid.NewGuid().ToString();
-
+        [StringLength(50)]
         public string UserName { get; set; }
+
+        [StringLength(50)]
+        [EmailAddress]
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public string PhoneNumber { get; set; }
