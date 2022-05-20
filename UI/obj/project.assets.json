@@ -9264,19 +9264,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rupesh\\.nuget\\packages\\": {}
+    "C:\\Users\\AnupMaharjan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "D:\\EKBANA\\PMS\\UI\\UI.csproj",
-      "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\UI\\obj\\",
+      "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9290,8 +9290,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj"
+            "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj": {
+              "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj"
             }
           }
         }
@@ -9337,7 +9337,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

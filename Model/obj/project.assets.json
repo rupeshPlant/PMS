@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rupesh\\.nuget\\packages\\": {}
+    "C:\\Users\\AnupMaharjan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
-      "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\Model\\obj\\",
+      "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj",
+      "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\EKBANA\\PMS\\Data\\Data.csproj": {
-                "projectPath": "D:\\EKBANA\\PMS\\Data\\Data.csproj"
+              "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj"
               },
-              "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
-                "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj"
+              "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj": {
+                "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj"
               }
             }
           }
@@ -75,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EKBANA\\PMS\\Data\\Data.csproj": {
+    "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "D:\\EKBANA\\PMS\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\Data\\obj\\",
+        "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,11 +103,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\EKBANA\\PMS\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj"
+              "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj"
               },
-              "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
-                "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj"
+              "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj": {
+                "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj"
               }
             }
           }
@@ -142,21 +142,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EKBANA\\PMS\\Entities\\Entities.csproj": {
+    "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -202,21 +202,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
+    "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
-        "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\Model\\obj\\",
+        "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj",
+        "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -256,7 +256,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

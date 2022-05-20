@@ -524,19 +524,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rupesh\\.nuget\\packages\\": {}
+    "C:\\Users\\AnupMaharjan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\Entities\\obj\\",
+      "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -582,7 +582,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

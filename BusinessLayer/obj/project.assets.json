@@ -865,19 +865,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rupesh\\.nuget\\packages\\": {}
+    "C:\\Users\\AnupMaharjan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj",
-      "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\BusinessLayer\\obj\\",
+      "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj",
+      "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -891,11 +891,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\EKBANA\\PMS\\Data\\Data.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Data\\Data.csproj"
+            "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj"
             },
-            "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj"
+            "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj": {
+              "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Model\\Models.csproj"
             }
           }
         }
@@ -938,7 +938,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

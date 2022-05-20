@@ -1138,19 +1138,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rupesh\\.nuget\\packages\\": {}
+    "C:\\Users\\AnupMaharjan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\EKBANA\\PMS\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\API\\obj\\",
+      "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\AnupMaharjan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AnupMaharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1164,11 +1164,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "D:\\EKBANA\\PMS\\Data\\Data.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Data\\Data.csproj"
+            "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\AnupMaharjan\\Desktop\\PMS\\PMS\\Data\\Data.csproj"
             }
           }
         }
@@ -1212,7 +1212,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
