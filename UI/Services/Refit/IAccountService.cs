@@ -7,5 +7,8 @@ namespace UI.Services.Refit
     {
         [Post("/api/Account/Login")]
         Task<HttpResponseMessage> Login([Body] LoginModel loginModel);
+        
+        [Post("/api/Employee/EmployeeList")]
+        Task<HttpResponseMessage> EmployeeList();
     }
 }

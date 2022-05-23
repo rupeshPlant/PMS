@@ -34,7 +34,7 @@ namespace BusinessLayer
                 var employe = await _context.Employee.Where(x => x.UserName == loginModel.UserName).SingleOrDefaultAsync();
                 if (employe != null)
                 {
-                    var passwordVerificationResult = new PasswordHasher<Employee>().VerifyHashedPassword(employe, employe.PasswordHash, loginModel.Password);
+                    var passwordVerificationResult = new PasswordHasher<Entities.Employee>().VerifyHashedPassword(employe, employe.PasswordHash, loginModel.Password);
 
                     switch (passwordVerificationResult)
                     {
@@ -101,7 +101,7 @@ namespace BusinessLayer
                 await _context.Person.AddAsync(person);
                 await _context.SaveChangesAsync();
 
-                await _context.Employee.AddAsync(new Employee
+                await _context.Employee.AddAsync(new Entities.Employee
                 {
                     Email = employeeModel.EmailAddress,
                     PersonId = person.PersonId,

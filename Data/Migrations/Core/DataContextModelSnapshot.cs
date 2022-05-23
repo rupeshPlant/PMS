@@ -29,7 +29,8 @@ namespace Data.Migrations.Core
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<DateTimeOffset>("InsertDate")
                         .HasColumnType("timestamp with time zone");
@@ -63,7 +64,8 @@ namespace Data.Migrations.Core
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.HasKey("EmployeeId");
 
@@ -84,15 +86,29 @@ namespace Data.Migrations.Core
                         {
                             EmployeeId = "5b6cd63e-e6bb-4168-bb33-ae73952c716f",
                             Email = "superadmin@project.com",
-                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4509), new TimeSpan(0, 0, 0, 0, 0)),
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2588), new TimeSpan(0, 0, 0, 0, 0)),
                             InsertPersonId = "1",
                             PasswordHash = "AQAAAAEAAYagAAAAECYRvg4UxADgEMkvzWBbZ7BzwVeMhe23Iu/Yc2XANppkQ3VwbLpWuwPjziLJHQfoyA==",
                             PersonId = "fc32092d-d2dc-4a6a-a0b0-a4a482d21c07",
                             PhoneNumber = "9841111111",
                             RoleId = "d0b3eab9-9f9d-45cc-95c0-b28fb7062868",
-                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4510), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2589), new TimeSpan(0, 0, 0, 0, 0)),
                             UpdatePersonId = "1",
                             UserName = "superadmin"
+                        },
+                        new
+                        {
+                            EmployeeId = "test555-e6bb-4168-bb33-ae73952c716f",
+                            Email = "test@mail.com",
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2614), new TimeSpan(0, 0, 0, 0, 0)),
+                            InsertPersonId = "1",
+                            PasswordHash = "AQAAAAEAAYagAAAAECYRvg4UxADgEMkvzWBbZ7BzwVeMhe23Iu/Yc2XANppkQ3VwbLpWuwPjziLJHQfoyA==",
+                            PersonId = "che32092d-d2dc-4a6a-a0b0-a4a482d21c07",
+                            PhoneNumber = "984111111",
+                            RoleId = "d0b3eab9-9f9d-45cc-95c0-b28fb7062868",
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2615), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatePersonId = "1",
+                            UserName = "Test"
                         });
                 });
 
@@ -110,7 +126,8 @@ namespace Data.Migrations.Core
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<DateTimeOffset>("UpdateDate")
                         .HasColumnType("timestamp with time zone");
@@ -127,10 +144,19 @@ namespace Data.Migrations.Core
                         new
                         {
                             PersonId = "fc32092d-d2dc-4a6a-a0b0-a4a482d21c07",
-                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4489), new TimeSpan(0, 0, 0, 0, 0)),
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2568), new TimeSpan(0, 0, 0, 0, 0)),
                             InsertPersonId = "1",
                             Name = "superadmin",
-                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4489), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2568), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatePersonId = "1"
+                        },
+                        new
+                        {
+                            PersonId = "che32092d-d2dc-4a6a-a0b0-a4a482d21c07",
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2602), new TimeSpan(0, 0, 0, 0, 0)),
+                            InsertPersonId = "1",
+                            Name = "Check",
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2603), new TimeSpan(0, 0, 0, 0, 0)),
                             UpdatePersonId = "1"
                         });
                 });
@@ -170,11 +196,11 @@ namespace Data.Migrations.Core
                         new
                         {
                             RoleId = "d0b3eab9-9f9d-45cc-95c0-b28fb7062868",
-                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4355), new TimeSpan(0, 0, 0, 0, 0)),
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2448), new TimeSpan(0, 0, 0, 0, 0)),
                             InsertPersonId = "1",
                             RoleName = "Super Admin",
                             RoleSystemName = "superadmin",
-                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4359), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 20, 10, 20, 2, 7, DateTimeKind.Unspecified).AddTicks(2450), new TimeSpan(0, 0, 0, 0, 0)),
                             UpdatePersonId = "1"
                         });
                 });

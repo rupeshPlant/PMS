@@ -22,3 +22,15 @@ D:\EKBANA\PMS\Entities\obj\Debug\net6.0\Entities.dll
 D:\EKBANA\PMS\Entities\obj\Debug\net6.0\refint\Entities.dll
 D:\EKBANA\PMS\Entities\obj\Debug\net6.0\Entities.pdb
 D:\EKBANA\PMS\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\AnupMaharjan\Desktop\PMS\PMS\Entities\obj\Debug\net6.0\ref\Entities.dll

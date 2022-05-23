@@ -22,10 +22,13 @@ namespace UI.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult Login()
+        public IActionResult Login(string ReturnUrl)
         {
-            //if (User.Identity.IsAuthenticated)
-            //    return RedirectToAction("Index", "Dashboard");
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            ViewData["ReturnUrl"] = ReturnUrl;
             return View();
         }
 
@@ -47,6 +50,7 @@ namespace UI.Controllers
                         
                         var claims = new List<Claim>
                         {
+                            new Claim(ClaimTypes.Name,personResult.Name),
                             new Claim(ClaimTypes.Email,personResult.Email),
                             new Claim(ClaimTypes.NameIdentifier,personResult.PersonId),
                             new Claim("UserName",personResult.UserName)
@@ -57,7 +61,7 @@ namespace UI.Controllers
 
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-                        return !string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl) ? Redirect(ReturnUrl) : RedirectToAction("Index", "Home");
+                        return !string.IsNullOrEmpty(ReturnUrl) ? Redirect(ReturnUrl) : RedirectToAction("Index", "Home");
                     }
                     else
                     {
@@ -88,5 +92,22 @@ namespace UI.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login");
         }
+
+
+        public async Task<IActionResult> DisplayEmployee()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> EmployeeList()
+        {
+            var response = await _iAccountService.EmployeeList();
+            var result = response.Content.ReadAsStringAsync().Result;
+            var personResult = JsonConvert.DeserializeObject<EmployeeModel>(result);
+
+            return Ok(personResult);
+        }
+        
     }
 }

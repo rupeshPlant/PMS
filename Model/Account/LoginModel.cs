@@ -9,9 +9,9 @@ namespace Models.Account
 {
     public class LoginModel
     {
-        [Required]
+        [Required(ErrorMessage = "USername is required.")]
         public string UserName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Password is required.")]
         public string Password { get; set; }
     }
 }
