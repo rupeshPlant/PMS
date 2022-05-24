@@ -65,7 +65,7 @@ namespace UI.Controllers
                     }
                     else
                     {
-                        ModelState.AddModelError("Password", "Invalid Username or Password");
+                        ModelState.AddModelError("Invalid", "Invalid Username or Password");
                         model.Password = "";
                         return View(model);
                     }
@@ -73,14 +73,14 @@ namespace UI.Controllers
 
                 else
                 {
-                    ModelState.AddModelError("Password", "Invalid Username or Password");
+                    ModelState.AddModelError("Invalid", "Invalid Username or Password");
                     model.Password = "";
                     return View(model);
                 }
             }
             else
             {
-                ModelState.AddModelError("Password", "Invalid Username or Password");
+                ModelState.AddModelError("Invalid", "Invalid Username or Password");
                 model.Password = "";
                 return View(model);
             }

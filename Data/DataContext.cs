@@ -1,4 +1,6 @@
 ﻿using Entities;
+using Entities.ListItem;
+using Entities.Vendor;
 using Microsoft.EntityFrameworkCore;
 using Models.Common.Authorization;
 
@@ -66,9 +68,85 @@ namespace Data
                 UpdateDate = DateTimeOffset.UtcNow,
                 UpdatePersonId = "1"
             });
+
+            modelBuilder.Entity<ListItemCategory>().HasData(new ListItemCategory
+            {
+                ListCategoryId = "VT-01",
+                ListCategoryName = "Vendor Type",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
+            modelBuilder.Entity<ListItemCategory>().HasData(new ListItemCategory
+            {
+                ListCategoryId = "VS-01",
+                ListCategoryName = "Vendor Status",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
+            modelBuilder.Entity<ListItem>().HasData(new ListItem
+            {
+                ListItemId = "VTI-01",
+                ListItemName = "PAN",
+                ListItemCategoryId = "VT-01",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
+            modelBuilder.Entity<ListItem>().HasData(new ListItem
+            {
+                ListItemId = "VTI-02",
+                ListItemName = "VAT",
+                ListItemCategoryId = "VT-01",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
+            modelBuilder.Entity<ListItem>().HasData(new ListItem
+            {
+                ListItemId = "VSL-01",
+                ListItemName = "Active",
+                ListItemCategoryId = "VS-01",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
+            modelBuilder.Entity<ListItem>().HasData(new ListItem
+            {
+                ListItemId = "VSL-02",
+                ListItemName = "Inactive",
+                ListItemCategoryId = "VS-01",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
+
+            modelBuilder.Entity<Vendor>().HasData(new Vendor
+            {
+                VendorId = "V-01",
+                VendorName = "SK Suppliers",
+                VendorStatusListItem = "VSL-01",
+                VendorTypeListItem = "VTI-01",
+                TaxRegistrationNumber = "123456789",
+                InsertDate = DateTimeOffset.UtcNow,
+                InsertPersonId = "1",
+                UpdateDate = DateTimeOffset.UtcNow,
+                UpdatePersonId = "1"
+            });
         }
         public DbSet<Person> Person { get; set; }
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Role> Role { get; set; }
+        public DbSet<Vendor> Vendor { get; set; }
+        public DbSet<ListItemCategory> ListItemCategory { get; set; }
+        public DbSet<ListItem> ListItem { get; set; }
+        
     }
 }

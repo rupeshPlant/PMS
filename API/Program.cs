@@ -1,6 +1,7 @@
 using BusinessLayer;
 using BusinessLayer.Employee;
 using BusinessLayer.Services;
+using BusinessLayer.Vendor;
 using Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<DataContext>(opt =>
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
