@@ -10,5 +10,10 @@ namespace UI.Controllers
             var data = User.FindFirst(ClaimTypes.Email)?.Value;
             return View();
         }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }
