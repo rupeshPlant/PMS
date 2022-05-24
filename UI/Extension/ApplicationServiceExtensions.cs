@@ -13,6 +13,11 @@ namespace UI.Extension
                    .ConfigureHttpClient(c =>
                    {
                        c.BaseAddress = new Uri(config.GetSection("ApiServiceUrls:APIUrl").Value);
+                   });
+            services.AddRefitClient<IProductService>()
+                   .ConfigureHttpClient(c =>
+                   {
+                       c.BaseAddress = new Uri(config.GetSection("ApiServiceUrls:APIUrl").Value);
                    });          
             #endregion
 

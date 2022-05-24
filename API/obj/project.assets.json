@@ -387,6 +387,15 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.Linq.Dynamic.Core/1.2.18": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
@@ -407,7 +416,8 @@
           "Microsoft.Extensions.Http": "6.0.0",
           "Microsoft.Extensions.Identity.Core": "6.0.5",
           "Models": "1.0.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "System.Linq.Dynamic.Core": "1.2.18"
         },
         "compile": {
           "bin/placeholder/BusinessLayer.dll": {}
@@ -1083,6 +1093,54 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Linq.Dynamic.Core/1.2.18": {
+      "sha512": "+RH90sKD6SK2c9MD2Xo2jz1hkAJYfgPVyW1VgAwiPURR+JzOJCdvsDBg2Iq97FmTymxlQBY76G1cMxsF6j+6tA==",
+      "type": "package",
+      "path": "system.linq.dynamic.core/1.2.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/System.Linq.Dynamic.Core.dll",
+        "lib/net35/System.Linq.Dynamic.Core.pdb",
+        "lib/net35/System.Linq.Dynamic.Core.xml",
+        "lib/net40/System.Linq.Dynamic.Core.dll",
+        "lib/net40/System.Linq.Dynamic.Core.pdb",
+        "lib/net40/System.Linq.Dynamic.Core.xml",
+        "lib/net45/System.Linq.Dynamic.Core.dll",
+        "lib/net45/System.Linq.Dynamic.Core.pdb",
+        "lib/net45/System.Linq.Dynamic.Core.xml",
+        "lib/net452/System.Linq.Dynamic.Core.dll",
+        "lib/net452/System.Linq.Dynamic.Core.pdb",
+        "lib/net452/System.Linq.Dynamic.Core.xml",
+        "lib/net46/System.Linq.Dynamic.Core.dll",
+        "lib/net46/System.Linq.Dynamic.Core.pdb",
+        "lib/net46/System.Linq.Dynamic.Core.xml",
+        "lib/net5.0/System.Linq.Dynamic.Core.dll",
+        "lib/net5.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net5.0/System.Linq.Dynamic.Core.xml",
+        "lib/net6.0/System.Linq.Dynamic.Core.dll",
+        "lib/net6.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net6.0/System.Linq.Dynamic.Core.xml",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.xml",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.dll",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.pdb",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.pri",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.xml",
+        "system.linq.dynamic.core.1.2.18.nupkg.sha512",
+        "system.linq.dynamic.core.nuspec"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
@@ -1143,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\API\\API.csproj",
+      "projectUniqueName": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\EKBANA\\PMS\\API\\API.csproj",
+      "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\API\\obj\\",
+      "outputPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1164,11 +1222,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\BusinessLayer\\BusinessLayer.csproj"
+            "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "D:\\EKBANA\\PMS\\Data\\Data.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Data\\Data.csproj"
+            "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Data\\Data.csproj": {
+              "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Data\\Data.csproj"
             }
           }
         }
@@ -1212,7 +1270,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

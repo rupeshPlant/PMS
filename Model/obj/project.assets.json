@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
+      "projectUniqueName": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
+      "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj",
       "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\Model\\obj\\",
+      "outputPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EKBANA\\PMS\\UI\\UI.csproj": {}
+    "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\UI\\UI.csproj": {}
   },
   "projects": {
-    "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
+    "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
+        "projectUniqueName": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj",
+        "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj",
         "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\Model\\obj\\",
+        "outputPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,18 +54,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EKBANA\\PMS\\UI\\UI.csproj": {
+    "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "D:\\EKBANA\\PMS\\UI\\UI.csproj",
+        "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\UI\\obj\\",
+        "outputPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
-                "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj"
+              "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj": {
+                "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj"
               }
             }
           }
@@ -98,6 +98,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.8, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.4, )"
@@ -129,7 +133,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

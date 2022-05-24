@@ -2,9 +2,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 using Models.Account;
-using Models.Common;
 using Newtonsoft.Json;
 using System.Security.Claims;
 using UI.Services.Refit;
@@ -24,8 +22,8 @@ namespace UI.Controllers
         [AllowAnonymous]
         public IActionResult Login()
         {
-            //if (User.Identity.IsAuthenticated)
-            //    return RedirectToAction("Index", "Dashboard");
+            if (User.Identity.IsAuthenticated)
+                return RedirectToAction("Index", "Home");
             return View();
         }
 
@@ -44,18 +42,16 @@ namespace UI.Controllers
                     var personResult = JsonConvert.DeserializeObject<PersonModel>(result);
                     if (personResult.PersonId != null)
                     {
-                        
                         var claims = new List<Claim>
                         {
-                            new Claim(ClaimTypes.Email,personResult.Email),
+                            new Claim(ClaimTypes.Email,model.UserName),
                             new Claim(ClaimTypes.NameIdentifier,personResult.PersonId),
-                            new Claim("UserName",personResult.UserName)
                         };
 
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
 
-                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+                        HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity)).Wait();
 
                         return !string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl) ? Redirect(ReturnUrl) : RedirectToAction("Index", "Home");
                     }

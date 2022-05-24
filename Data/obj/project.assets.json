@@ -686,11 +686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EKBANA\\PMS\\Data\\Data.csproj",
+      "projectUniqueName": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "D:\\EKBANA\\PMS\\Data\\Data.csproj",
+      "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-      "outputPath": "D:\\EKBANA\\PMS\\Data\\obj\\",
+      "outputPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -707,11 +707,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\EKBANA\\PMS\\Entities\\Entities.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj"
+            "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\Entities.csproj"
             },
-            "D:\\EKBANA\\PMS\\Model\\Models.csproj": {
-              "projectPath": "D:\\EKBANA\\PMS\\Model\\Models.csproj"
+            "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj": {
+              "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Model\\Models.csproj"
             }
           }
         }
@@ -746,7 +746,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

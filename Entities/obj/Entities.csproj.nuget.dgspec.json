@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EKBANA\\PMS\\Entities\\Entities.csproj": {}
+    "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "D:\\EKBANA\\PMS\\Entities\\Entities.csproj": {
+    "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\EKBANA\\PMS\\Entities\\Entities.csproj",
+        "projectPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Rupesh\\.nuget\\packages\\",
-        "outputPath": "D:\\EKBANA\\PMS\\Entities\\obj\\",
+        "outputPath": "D:\\EKBANA\\PurchaseManagementSystem\\PMS\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rupesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

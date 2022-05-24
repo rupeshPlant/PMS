@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Models;
 using Models.Account;
 
 namespace BusinessLayer
@@ -20,6 +19,9 @@ namespace BusinessLayer
             _context = context;
             _logger = logger;
         }
+
+
+
 
         public async Task<PersonModel> Login(LoginModel loginModel)
         {
@@ -50,8 +52,6 @@ namespace BusinessLayer
                             var result = new PersonModel
                             {
                                 Name = person.Name,
-                                Email = employe.Email,
-                                UserName = employe.UserName,
                                 PersonId = person.PersonId
                             };
                             return result;
@@ -84,51 +84,5 @@ namespace BusinessLayer
                 throw;
             }
         }
-
-        public async Task<ResponseMessageModel> CreateEmploye(CreateEmployeeModel employeeModel)
-        {
-            using var transaction = await _context.Database.BeginTransactionAsync();
-
-            try
-            {
-                var checkIfUserExistes = _context.Employee.Any(x => x.Email == employeeModel.EmailAddress || x.UserName.ToLower() == employeeModel.UserName.ToLower());
-                if (checkIfUserExistes) return new ResponseMessageModel() { ResponseMessage = "Employee Already Exists" };
-
-                var person = new Person
-                {
-                    Name = employeeModel.Name
-                };
-                await _context.Person.AddAsync(person);
-                await _context.SaveChangesAsync();
-
-                await _context.Employee.AddAsync(new Employee
-                {
-                    Email = employeeModel.EmailAddress,
-                    PersonId = person.PersonId,
-                    PhoneNumber = employeeModel.PhoneNumber,
-                    RoleId = "needToChange:D",
-                    UserName = employeeModel.UserName,
-                    InsertDate = DateTimeOffset.UtcNow,
-                    InsertPersonId = "1",
-                    UpdateDate = DateTimeOffset.UtcNow,
-                    UpdatePersonId = "1"
-                });
-                await _context.SaveChangesAsync();
-
-                await transaction.CommitAsync();
-
-                return new ResponseMessageModel()
-                {
-                    ResponseMessage = "Employee Created Successfully"
-                };
-            }
-            catch (Exception)
-            {
-                await transaction.RollbackAsync();
-                throw;
-            }
-                   
-        }
-
     }
 }

@@ -17,6 +17,7 @@ namespace Data.Migrations.Core
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .HasAnnotation("Npgsql:CollationDefinition:case_insensitive_collation", "en-u-ks-primary,en-u-ks-primary,icu,False")
                 .HasAnnotation("ProductVersion", "6.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
@@ -82,15 +83,15 @@ namespace Data.Migrations.Core
                     b.HasData(
                         new
                         {
-                            EmployeeId = "5b6cd63e-e6bb-4168-bb33-ae73952c716f",
+                            EmployeeId = "1",
                             Email = "superadmin@project.com",
-                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4509), new TimeSpan(0, 0, 0, 0, 0)),
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 24, 10, 15, 10, 119, DateTimeKind.Unspecified).AddTicks(6453), new TimeSpan(0, 0, 0, 0, 0)),
                             InsertPersonId = "1",
                             PasswordHash = "AQAAAAEAAYagAAAAECYRvg4UxADgEMkvzWBbZ7BzwVeMhe23Iu/Yc2XANppkQ3VwbLpWuwPjziLJHQfoyA==",
-                            PersonId = "fc32092d-d2dc-4a6a-a0b0-a4a482d21c07",
+                            PersonId = "1",
                             PhoneNumber = "9841111111",
-                            RoleId = "d0b3eab9-9f9d-45cc-95c0-b28fb7062868",
-                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4510), new TimeSpan(0, 0, 0, 0, 0)),
+                            RoleId = "1",
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 24, 10, 15, 10, 119, DateTimeKind.Unspecified).AddTicks(6453), new TimeSpan(0, 0, 0, 0, 0)),
                             UpdatePersonId = "1",
                             UserName = "superadmin"
                         });
@@ -126,13 +127,56 @@ namespace Data.Migrations.Core
                     b.HasData(
                         new
                         {
-                            PersonId = "fc32092d-d2dc-4a6a-a0b0-a4a482d21c07",
-                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4489), new TimeSpan(0, 0, 0, 0, 0)),
+                            PersonId = "1",
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 24, 10, 15, 10, 119, DateTimeKind.Unspecified).AddTicks(6433), new TimeSpan(0, 0, 0, 0, 0)),
                             InsertPersonId = "1",
                             Name = "superadmin",
-                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4489), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 24, 10, 15, 10, 119, DateTimeKind.Unspecified).AddTicks(6433), new TimeSpan(0, 0, 0, 0, 0)),
                             UpdatePersonId = "1"
                         });
+                });
+
+            modelBuilder.Entity("Entities.Product.Product", b =>
+                {
+                    b.Property<string>("ProductId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("InsertDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("InsertPersonId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ParentProductId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UpdatePersonId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("ProductId");
+
+                    b.HasIndex("ProductCode")
+                        .IsUnique();
+
+                    NpgsqlIndexBuilderExtensions.UseCollation(b.HasIndex("ProductCode"), new[] { "case_insensitive_collation" });
+
+                    b.HasIndex("ProductName", "ParentProductId")
+                        .IsUnique();
+
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("Entities.Role", b =>
@@ -164,17 +208,20 @@ namespace Data.Migrations.Core
 
                     b.HasKey("RoleId");
 
+                    b.HasIndex("RoleSystemName")
+                        .IsUnique();
+
                     b.ToTable("Role");
 
                     b.HasData(
                         new
                         {
-                            RoleId = "d0b3eab9-9f9d-45cc-95c0-b28fb7062868",
-                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4355), new TimeSpan(0, 0, 0, 0, 0)),
+                            RoleId = "1",
+                            InsertDate = new DateTimeOffset(new DateTime(2022, 5, 24, 10, 15, 10, 119, DateTimeKind.Unspecified).AddTicks(6248), new TimeSpan(0, 0, 0, 0, 0)),
                             InsertPersonId = "1",
                             RoleName = "Super Admin",
                             RoleSystemName = "superadmin",
-                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 18, 5, 34, 55, 588, DateTimeKind.Unspecified).AddTicks(4359), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdateDate = new DateTimeOffset(new DateTime(2022, 5, 24, 10, 15, 10, 119, DateTimeKind.Unspecified).AddTicks(6249), new TimeSpan(0, 0, 0, 0, 0)),
                             UpdatePersonId = "1"
                         });
                 });
